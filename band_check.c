@@ -9,6 +9,9 @@ int main() {
     if ( number == 311 ) {
         printf("You entered %d.\n", number);
         printf("That is correct!\n");
+    } else {
+        printf("You entered %d.\n", number);      
+        printf("Wrong!\n");
     }
     
     return 0;
