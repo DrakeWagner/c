@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 int main(void) {
 	char name[20];
         fgets(name, 20, stdin);
