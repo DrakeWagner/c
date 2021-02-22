@@ -1,23 +1,27 @@
 #include <stdio.h>
-int main() {
-    int i, j, rows;
-    printf("How high will the half pyramid be? ");
-    scanf("%d", &rows);
-    for (i=1; i<=rows; ++i) {
-        for (j=1; j<=i; ++j) {
-            printf("**");
-        }
-        printf("\n");
-    }
+
+/* Write a C program to compute the sum of the two given 
+integer values. If the two values are the same, then return 
+triple their sum. Go to the editor */
+
+int getSum(int num1, int num2){
+    return num1 + num2;
+};
+
+int main(){
+
+    int number1;
+    printf("First number: \n");
+    scanf("%d", &number1);
+    int number2;
+    printf("Second number: \n");
+    scanf("%d", &number2);
+
+
+    int sum = getSum(number1, number2);
+    printf("The total is: ");
+    printf("%d \n", sum);
+
+
     return 0;
 }
-
-
-// int main() {
-//     int i;
-//     for (i=1;i<11;++i) {
-//         printf("%d ", i);
-//     }
-//     return 0;
-// }
-
